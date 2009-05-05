@@ -7,7 +7,8 @@ Summary:        Rpmlint mandriva policy
 Group:          Development/Other
 License:        GPLv2+
 URL:            http://wiki.mandriva.com/
-Source0:        config
+Source0:        mandriva.conf
+Source1:        mandriva.error.list
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
 Requires:       rpmlint
@@ -18,8 +19,9 @@ produces rpm for mandriva.
 %install
 rm -rf %{buildroot}
 mkdir -p  %{buildroot}/%rpmlint_config
-cp -a %{SOURCE0} %{buildroot}/%rpmlint_config/mandriva.conf
+cp -a %{SOURCE0} %{buildroot}/%rpmlint_config/
+cp -a %{SOURCE1} %{buildroot}/%rpmlint_config/
 
 %files
 %defattr(-,root,root,-)
-%rpmlint_config/*conf
+%rpmlint_config/*
