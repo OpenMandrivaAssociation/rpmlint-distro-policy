@@ -10,6 +10,7 @@ URL:            http://wiki.mandriva.com/
 Source0:        config
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
+Requires:       rpmlint
 %description
 Official rpmlint mandriva policy, install this if you want to 
 produces rpm for mandriva.
