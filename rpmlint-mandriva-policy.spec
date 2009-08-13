@@ -2,7 +2,7 @@
 
 Name:           rpmlint-mandriva-policy
 Version:        0.2.3
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Rpmlint mandriva policy
 Group:          Development/Other
 License:        GPLv2+
