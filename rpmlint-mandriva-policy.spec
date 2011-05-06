@@ -2,26 +2,27 @@
 
 Name:           rpmlint-mandriva-policy
 Version:        0.2.6
-Release:        %mkrel 2
+Release:        3
 Summary:        Rpmlint mandriva policy
 Group:          Development/Other
 License:        GPLv2+
 URL:            http://wiki.mandriva.com/
 Source0:        mandriva.conf
 Source1:        mandriva.error.list
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
 Requires:       rpmlint
+
 %description
 Official rpmlint mandriva policy, install this if you want to 
 produces rpm for mandriva.
 
+%prep
+
+%build
+
 %install
-rm -rf %{buildroot}
-mkdir -p  %{buildroot}/%rpmlint_config
-cp -a %{SOURCE0} %{buildroot}/%rpmlint_config/
-cp -a %{SOURCE1} %{buildroot}/%rpmlint_config/
+install -m644 %{SOURCE0} -D %{buildroot}%{rpmlint_config}/mandriva.conf
+install -m644 %{SOURCE1} -D %{buildroot}%{rpmlint_config}/mandriva.error.list
 
 %files
-%defattr(-,root,root,-)
-%rpmlint_config/*
+%{rpmlint_config}/*
