@@ -13,8 +13,8 @@ BuildArch:      noarch
 Requires:       rpmlint
 
 %description
-Official rpmlint mandriva policy, install this if you want to 
-produces rpm for mandriva.
+Official rpmlint Mandriva policy, install this if you want to  produce RPMs
+for Mandriva.
 
 %prep
 
