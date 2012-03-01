@@ -1,7 +1,7 @@
 %define rpmlint_config %{_datadir}/rpmlint/config.d/
 
 Name:           rpmlint-mandriva-policy
-Version:        0.3.14
+Version:        0.3.15
 Release:        1
 Summary:        Rpmlint mandriva policy
 Group:          Development/Other
