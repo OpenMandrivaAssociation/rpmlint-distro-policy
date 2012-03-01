@@ -1,5 +1,3 @@
-%define rpmlint_config %{_datadir}/rpmlint/config.d/
-
 Name:           rpmlint-mandriva-policy
 Version:        0.3.15
 Release:        1
@@ -25,4 +23,4 @@ install -m644 %{SOURCE0} -D %{buildroot}%{rpmlint_config}/mandriva.conf
 install -m644 %{SOURCE1} -D %{buildroot}%{rpmlint_config}/mandriva.error.list
 
 %files
-%{rpmlint_config}/*
+%{_datadir}/rpmlint/config.d/*
