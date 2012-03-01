@@ -19,8 +19,8 @@ for Mandriva.
 %build
 
 %install
-install -m644 %{SOURCE0} -D %{buildroot}%{rpmlint_config}/mandriva.conf
-install -m644 %{SOURCE1} -D %{buildroot}%{rpmlint_config}/mandriva.error.list
+install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.conf
+install -m644 %{SOURCE1} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.error.list
 
 %files
 %{_datadir}/rpmlint/config.d/*
