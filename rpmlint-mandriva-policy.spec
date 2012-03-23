@@ -1,15 +1,15 @@
-Name:           rpmlint-mandriva-policy
-Version:        0.3.21
-Release:        1
-Summary:        Rpmlint mandriva policy
-Group:          Development/Other
-License:        GPLv2+
-URL:            http://wiki.mandriva.com/
-Source0:        mandriva.conf
-Source1:        mandriva.error.list
-BuildArch:      noarch
+Name:		rpmlint-mandriva-policy
+Version:	0.3.21
+Release:	1
+Summary:	Rpmlint mandriva policy
+Group:		Development/Other
+License:	GPLv2+
+URL:		http://wiki.mandriva.com/
+Source0:	mandriva.conf
+Source1:	mandriva.error.list
+BuildArch:	noarch
 BuildRequires:	rpmlint
-Requires:       rpmlint
+Requires:	rpmlint
 
 %description
 Official rpmlint Mandriva policy, install this if you want to  produce RPMs
