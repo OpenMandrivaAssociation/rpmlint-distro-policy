@@ -8,6 +8,7 @@ URL:            http://wiki.mandriva.com/
 Source0:        mandriva.conf
 Source1:        mandriva.error.list
 BuildArch:      noarch
+BuildRequires:	rpmlint
 Requires:       rpmlint
 
 %description
@@ -17,6 +18,9 @@ for Mandriva.
 %prep
 
 %build
+
+%check
+PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
 
 %install
 install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.conf
