@@ -1,6 +1,6 @@
 Name:		rpmlint-mandriva-policy
-Version:	0.3.24
-Release:	1
+Version:	0.3.22
+Release:	6
 Summary:	Rpmlint mandriva policy
 Group:		Development/Other
 License:	GPLv2+
@@ -12,15 +12,15 @@ BuildRequires:	rpmlint
 Requires:	rpmlint
 
 %description
-Official rpmlint Mandriva policy, install this if you want to  produce RPMs
+Official rpmlint Mandriva policy, install this if you want to produce RPMs
 for Mandriva.
 
 %prep
 
 %build
 
-%check
-PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
+#check
+#PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
 
 %install
 install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.conf
@@ -28,3 +28,4 @@ install -m644 %{SOURCE1} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.er
 
 %files
 %{_datadir}/rpmlint/config.d/*
+
