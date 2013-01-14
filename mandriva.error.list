@@ -63,6 +63,7 @@ lib-package-without-%mklibname
 library-not-linked-against-libc
 library-without-ldconfig-postin
 library-without-ldconfig-postun
+links-against-library-in-usr 50
 malformed-line-in-lsb-comment-block
 menu-in-wrong-dir
 menu-without-postin
