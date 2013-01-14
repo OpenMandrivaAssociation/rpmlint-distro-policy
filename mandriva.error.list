@@ -36,7 +36,7 @@ hardcoded-library-path
 htaccess-file
 incoherent-logrotate-file
 incoherent-subsys
-incoherent-version-in-name
+incoherent-version-in-name 50
 incorrect-locale-subdir
 info-dir-file 50
 info-files-with-install-info-postin 50
