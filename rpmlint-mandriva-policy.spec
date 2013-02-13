@@ -8,7 +8,7 @@ URL:		http://wiki.mandriva.com/
 Source0:	mandriva.conf
 Source1:	mandriva.error.list
 BuildArch:	noarch
-BuildRequires:	rpmlint:
+BuildRequires:	rpmlint
 Requires:	rpmlint
 
 %description
