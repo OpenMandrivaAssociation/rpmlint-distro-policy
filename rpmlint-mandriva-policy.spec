@@ -12,7 +12,7 @@ BuildRequires:	rpmlint:
 Requires:	rpmlint
 
 %description
-Official rpmlint %{vendor} policy, install this if you want to  produce RPMs
+Official rpmlint %{vendor} policy, install this if you want to produce RPMs
 for %{vendor}.
 
 %prep
