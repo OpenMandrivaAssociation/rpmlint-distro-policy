@@ -104,7 +104,6 @@ non-utf8-desktopfile
 non-utf8-spec-file
 non-versioned-file-in-library-package
 non-xdg-migrated-menu
-no-packager-tag
 no-prereq-on
 no-release-tag
 no-signature M10
