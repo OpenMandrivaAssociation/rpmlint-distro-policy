@@ -134,7 +134,6 @@ redundant-lsb-keyword
 requires-on-install-info 50
 rpath-in-buildconfig
 score-file-must-not-be-conffile
-script-without-shebang
 setgid-binary
 setuid-binary
 shared-lib-without-dependency-information
