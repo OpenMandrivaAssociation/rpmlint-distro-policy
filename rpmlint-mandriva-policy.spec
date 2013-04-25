@@ -1,5 +1,5 @@
 Name:		rpmlint-mandriva-policy
-Version:	0.3.28
+Version:	0.3.29
 Release:	1
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
