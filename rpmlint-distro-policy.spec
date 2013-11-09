@@ -1,15 +1,16 @@
-Name:		rpmlint-mandriva-policy
+Name:		rpmlint-distro-policy
 Version:	0.3.28
-Release:	1
+Release:	2
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
 License:	GPLv2+
-URL:		http://wiki.mandriva.com/
-Source0:	mandriva.conf
-Source1:	mandriva.error.list
+URL:		%{disturl}
+Source0:	distro.conf
+Source1:	distro.error.list
 BuildArch:	noarch
 BuildRequires:	rpmlint
 Requires:	rpmlint
+%rename		rpmlint-mandriva-policy
 
 %description
 Official rpmlint %{vendor} policy, install this if you
