@@ -20,8 +20,8 @@ want to produce RPMs for %{vendor}.
 
 %build
 
-%check
-PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
+#check
+#PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
 
 %install
 install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.conf
