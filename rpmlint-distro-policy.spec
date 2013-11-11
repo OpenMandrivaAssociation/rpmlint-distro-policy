@@ -1,6 +1,6 @@
 Name:		rpmlint-distro-policy
 Version:	0.3.28
-Release:	2
+Release:	3
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
 License:	GPLv2+
@@ -20,8 +20,8 @@ want to produce RPMs for %{vendor}.
 
 %build
 
-#check
-#PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
+%check
+PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
 
 %install
 install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/mandriva.conf
