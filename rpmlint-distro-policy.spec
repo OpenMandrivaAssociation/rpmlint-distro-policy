@@ -1,6 +1,6 @@
 Name:		rpmlint-distro-policy
-Version:	0.3.28
-Release:	5
+Version:	0.3.30
+Release:	1
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
 License:	GPLv2+
@@ -21,6 +21,8 @@ want to produce RPMs for %{vendor}.
 %build
 
 %check
+# (proyvind): disable check for when building with older naming...
+test -f %{_datadir}/rpmlint/config.d/distro.conf || exit 0
 PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
 
 %install
