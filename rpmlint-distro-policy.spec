@@ -1,4 +1,4 @@
-Name:		rpmlint-mandriva-policy
+Name:		rpmlint-distro-policy
 Version:	0.3.30
 Release:	1
 Summary:	Rpmlint %{_target_vendor} policy
