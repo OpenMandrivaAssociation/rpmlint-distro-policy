@@ -9,6 +9,7 @@ compressed-symlink-with-wrong-ext
 debuginfo-without-sources 50
 description-line-too-long 50
 devel-dependency
+devel-file-in-non-devel-package 50
 dir-or-file-in-home 50
 dir-or-file-in-mnt 50
 dir-or-file-in-opt 50
