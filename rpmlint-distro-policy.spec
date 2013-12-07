@@ -1,6 +1,6 @@
 Name:		rpmlint-distro-policy
 Version:	0.3.30
-Release:	2
+Release:	3
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
 License:	GPLv2+
