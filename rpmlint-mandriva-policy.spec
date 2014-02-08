@@ -1,6 +1,6 @@
 Name:		rpmlint-mandriva-policy
 Version:	0.3.28
-Release:	5
+Release:	6
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
 License:	GPLv2+
