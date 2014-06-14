@@ -1,5 +1,5 @@
 Name:		rpmlint-distro-policy
-Version:	0.3.30
+Version:	0.3.31
 Release:	1
 Summary:	Rpmlint %{_target_vendor} policy
 Group:		Development/Other
