@@ -8,7 +8,7 @@ URL:		%{disturl}
 Source0:	distro.conf
 Source1:	distro.error.list
 BuildArch:	noarch
-BuildRequires:	rpmlint python
+BuildRequires:	rpmlint python2
 Requires:	rpmlint
 %rename		rpmlint-mandriva-policy
 
