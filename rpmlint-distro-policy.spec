@@ -1,15 +1,17 @@
-Name:		rpmlint-distro-policy
-Version:	0.3.31
-Release:	7
 Summary:	Rpmlint %{_target_vendor} policy
+Name:		rpmlint-distro-policy
+Version:	0.3.32
+Release:	1
 Group:		Development/Other
 License:	GPLv2+
 URL:		%{disturl}
-Source0:	distro.conf
-Source1:	distro.error.list
+Source0:	distribution.exceptions.conf
+Source1:	distribution.error.conf
+Source2:	distribution.error.list
 BuildArch:	noarch
-BuildRequires:	rpmlint python2
-Requires:	rpmlint
+BuildRequires:	rpmlint >= 1.10
+BuildRequires:	python >= 3
+Requires:	rpmlint >= 1.10
 %rename		rpmlint-mandriva-policy
 
 %description
@@ -17,17 +19,25 @@ Official rpmlint %{vendor} policy, install this if you
 want to produce RPMs for %{vendor}.
 
 %prep
+# nothing to do
 
 %build
+# nothing to do
 
 %check
-# (proyvind): disable check for when building with older naming...
-test -f %{_datadir}/rpmlint/config.d/distro.conf || exit 0
-# PYTHONPATH=%{_datadir}/rpmlint python %{SOURCE0}
+# prevent upload with a wrong config file
+export PYTHONPATH=/usr/share/rpmlint
+# this need some work, as this requires rpmlint-mageia-policy to be present to work fully
+#python %{SOURCE1}
+python %{SOURCE0}
 
 %install
-install -m644 %{SOURCE0} -D %{buildroot}%{_datadir}/rpmlint/config.d/distro.conf
-install -m644 %{SOURCE1} -D %{buildroot}%{_datadir}/rpmlint/config.d/distro.error.list
+mkdir -p cp -a %{buildroot}%{_datadir}/rpmlint/config.d
+cp -a %{SOURCE1} %{buildroot}%{rpmlint_config}/
+cp -a %{SOURCE2} %{buildroot}%{rpmlint_config}/
+cp -a %{SOURCE0} %{buildroot}%{rpmlint_config}/
+cp -a %{SOURCE1} %{buildroot}%{rpmlint_config}/
+cp -a %{SOURCE2} %{buildroot}%{rpmlint_config}/
 
 %files
 %{_datadir}/rpmlint/config.d/*
