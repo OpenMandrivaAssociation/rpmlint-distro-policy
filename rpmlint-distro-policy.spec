@@ -7,7 +7,7 @@
 
 
 Summary:	Rpmlint %{_target_vendor} policy
-Name:		rpmlint-%{_target_vendor}-policy
+Name:		rpmlint-distro-policy
 Version:	0.3.32
 Release:	1
 Group:		Development/Other
@@ -20,6 +20,7 @@ BuildArch:	noarch
 BuildRequires:	rpmlint >= 1.10
 BuildRequires:	python >= 3
 Requires:	rpmlint >= 1.10
+Provides:	rpmlint-%{_target_vendor}-policy = %{EVRD}
 %rename		rpmlint-mandriva-policy
 
 %description
