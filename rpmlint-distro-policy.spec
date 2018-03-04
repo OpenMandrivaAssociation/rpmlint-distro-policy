@@ -7,7 +7,7 @@
 
 
 Summary:	Rpmlint %{_target_vendor} policy
-Name:		rpmlint-distro-policy
+Name:		rpmlint-%{_target_vendor}-policy
 Version:	0.3.32
 Release:	1
 Group:		Development/Other
