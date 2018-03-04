@@ -41,9 +41,9 @@ python %{SOURCE0}
 
 %install
 mkdir -p  %{buildroot}%{_datadir}/rpmlint/config.d
-cp -a %{SOURCE0} %{buildroot}%{rpmlint_config}/
-cp -a %{SOURCE1} %{buildroot}%{rpmlint_config}/
-cp -a %{SOURCE2} %{buildroot}%{rpmlint_config}/
+cp -a %{SOURCE0} %{buildroot}%{_datadir}/rpmlint/config.d/
+cp -a %{SOURCE1} %{buildroot}%{_datadir}/rpmlint/config.d/
+cp -a %{SOURCE2} %{buildroot}%{_datadir}/rpmlint/config.d/
 
 %files
 %{_datadir}/rpmlint/config.d/*
