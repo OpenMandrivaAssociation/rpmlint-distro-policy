@@ -115,6 +115,10 @@ no-version-tag
 obsolete-on-name
 old-menu-entry
 outside-libdir-files
+percent-in-%pre
+percent-in-%post
+percent-in-%postun
+percent-in-%preun
 percent-in-conflicts
 percent-in-dependency
 percent-in-obsoletes
